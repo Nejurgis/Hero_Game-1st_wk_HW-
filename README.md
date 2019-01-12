@@ -46,11 +46,11 @@ Follow the instructions to implment `resting`, `picking up items` and `equipping
 ## Section 4 - Bonus: Show me what you got
 
 
-- Write `displayStats` function that writes your hero's name, health, weapontype, weapon damage to the page. Call it at the end of your script
+- Write `displayStats` function that writes your hero's name, health, weapontype, weapon damage to the page. Call it at the end of your script X
 
-- Create a form that allow users to change the name of their hero.
+- Create a form that allow users to change the name of their hero. X
 
-- Call `displayStats` when some data of the hero has change to update the page.
+- Call `displayStats` when some data of the hero has change to update the page. X
 
 - Implement fighting an enemy. (how you do it is up to you!)
 
