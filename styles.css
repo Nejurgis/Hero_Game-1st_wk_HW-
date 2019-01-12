@@ -1,0 +1,35 @@
+#container {
+    height: 20%;
+    width: 40%;
+    margin-bottom: 1em;
+    margin: 2em auto;
+}
+
+
+#inn {
+    width: 10em;
+    height: 10em;
+    background-image: url(inn.png);
+    background-size: cover;
+    margin-right: 1em;
+}
+
+#dagger {
+    width: 10em;
+    height: 10em;
+    background-image: url(dagger.png);
+    background-size: cover;
+    margin-right: 1em;
+}
+
+
+#bag {
+    width: 10em;
+    height: 10em;
+    background-image: url(bag.png);
+    background-size: cover;
+}
+
+#mocha {
+    margin-top:10em;
+}
