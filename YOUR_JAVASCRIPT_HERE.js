@@ -31,6 +31,16 @@ dagger.addEventListener('click', function() {
     pickUpItem(hero, {type: 'dagger', damage: 2})
 });
 
+// BAG
+const bag = document.createElement('IMG');
+bag.id = 'bag';
+container.append(bag);
+bag.addEventListener('click', function() {
+    equipWeapon(hero);
+})
+
+
+
 
 function rest(hero) {
     hero.health = 10;
@@ -41,6 +51,14 @@ function pickUpItem(hero, item){
     hero.inventory.push(item);
 }
 
-function equipWeapon() {
-
+function equipWeapon(hero){
+    if (hero.inventory.length === 0) {
+        console.log ('Inventory is empty');
+        return undefined;
+        
+    } else {
+        hero.weapon = hero.inventory[0]
+    }
 }
+
+
