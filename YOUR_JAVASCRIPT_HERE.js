@@ -68,6 +68,9 @@ function equipWeapon(hero){
 
 // - Create a form that allow users to change the name of their hero.
 
+
+
+
 // - Call `displayStats` when some data of the hero has change to update the page.
 
 // - Implement fighting an enemy. (how you do it is up to you!)
@@ -75,17 +78,36 @@ function equipWeapon(hero){
 // - When an enemy or weapon gets clicked it gets deleted from the page
 
 
-
+const tryOut = {};
 
 function displayStats() {
+    const heroName = document.createElement('p');
+    heroName.id = 'heroName';
+    heroName.innerText = `Hero Name: ${hero.name}`
     const details = document.createElement('p');
-    console.log(details);
-    details.innerText = `Hero Name: ${hero.name} \n Hero Health: ${hero.health}\n Hero Weapon Type: ${hero.weapon.type}\n Hero Weapon Damage: ${hero.weapon.damage} `;
-    container.append(details);
-
+    details.id = 'otherDetails';
+    details.innerText = `Hero Health: ${hero.health}\n Hero Weapon Type: ${hero.weapon.type}\n Hero Weapon Damage: ${hero.weapon.damage} `;
+    container.append(heroName);
+    container.append(details); 
 }
+
 displayStats();
 
-const button = document.createElement('button');
-button.innerText = 'I am a button!'
-container.append(button);
+
+// const button = document.createElement('button');
+// button.innerText = 'I am a button!';
+// container.append(button);
+
+function changeHeroName() {
+    event.preventDefault();
+    const newHeroName = document.getElementById('userHeroName');
+    hero.name = newHeroName.value;
+    // console.log(hero.name);
+    const oldHeroName = document.getElementById('heroName');
+    oldHeroName.innerText = `Hero Name: ${hero.name}`;
+    // displayStats();
+    // replace the existing hero paragraph with new name
+    
+}
+
+// changeHeroName();

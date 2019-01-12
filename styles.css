@@ -7,27 +7,27 @@
 
 
 #inn {
-    width: 10em;
-    height: 10em;
-    background-image: url(inn.png);
-    background-size: cover;
+    width: 2em;
+    height: 2em;
+    /* background-image: url(inn.png); */
+    /* background-size: cover; */
     margin-right: 1em;
 }
 
 #dagger {
-    width: 10em;
-    height: 10em;
-    background-image: url(dagger.png);
-    background-size: cover;
+    width: 2em;
+    height: 2em;
+    /* background-image: url(dagger.png); */
+    /* background-size: cover; */
     margin-right: 1em;
 }
 
 
 #bag {
-    width: 10em;
-    height: 10em;
-    background-image: url(bag.png);
-    background-size: cover;
+    width: 2em;
+    height: 2em;
+    /* background-image: url(bag.png); */
+    /* background-size: cover; */
 }
 
 #mocha {
