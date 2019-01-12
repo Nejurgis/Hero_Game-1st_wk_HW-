@@ -33,3 +33,11 @@
 #mocha {
     margin-top:10em;
 }
+
+#invisible {
+    display: none;
+}
+
+#visible{
+    display: block;
+}

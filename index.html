@@ -13,11 +13,13 @@
   <!-- YOUR HTML HERE -->
   <div id="container"></div>
 
-  <form onsubmit="changeHeroName() class='invisible'>
+  <form onsubmit="changeHeroName()" id='invisible'>
     <label for="userHeroName">Add your own Hero Name</label>
     <textarea type="text" name="userHeroName" id="userHeroName"></textarea>
     <button type="submit">Submit</button>
   </form>
+
+  <button onclick="displayForm()">Change Hero Name</button>
 
 
 

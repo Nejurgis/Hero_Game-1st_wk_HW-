@@ -66,12 +66,6 @@ function equipWeapon(hero){
 
 
 
-// - Create a form that allow users to change the name of their hero.
-
-
-
-
-// - Call `displayStats` when some data of the hero has change to update the page.
 
 // - Implement fighting an enemy. (how you do it is up to you!)
 
@@ -93,21 +87,22 @@ function displayStats() {
 
 displayStats();
 
+function displayForm() {
+    const form = document.getElementById('invisible');
+    form.setAttribute('id', 'visible');
+}
+
 
 // const button = document.createElement('button');
-// button.innerText = 'I am a button!';
-// container.append(button);
 
 function changeHeroName() {
     event.preventDefault();
     const newHeroName = document.getElementById('userHeroName');
     hero.name = newHeroName.value;
-    // console.log(hero.name);
     const oldHeroName = document.getElementById('heroName');
     oldHeroName.innerText = `Hero Name: ${hero.name}`;
-    // displayStats();
-    // replace the existing hero paragraph with new name
+    const form = document.getElementById('visible');
+    form.setAttribute('id', 'invisible');
+    newHeroName.value = null;
     
 }
-
-// changeHeroName();
