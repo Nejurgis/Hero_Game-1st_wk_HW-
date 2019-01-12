@@ -23,6 +23,13 @@ container.append(inn);
 // create a event handler that waits for the click event
 inn.addEventListener('click', function() { rest(hero)});
 
+// DAGGER
+const dagger = document.createElement('IMG');
+dagger.id = 'dagger';
+container.append(dagger);
+dagger.addEventListener('click', function() {
+    pickUpItem(hero, {type: 'dagger', damage: 2})
+});
 
 
 function rest(hero) {
@@ -30,10 +37,10 @@ function rest(hero) {
     return hero;
 }
 
-function pickUpItem() {
-
+function pickUpItem(hero, item){
+    hero.inventory.push(item);
 }
 
 function equipWeapon() {
-    
+
 }
